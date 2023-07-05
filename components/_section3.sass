@@ -1,0 +1,166 @@
+.enviame
+  height: 100vh
+  display: grid
+  grid-template-columns: repeat(1, 1fr) 
+  justify-content: center
+  align-items: center
+  gap: 40px
+  background-color: #227597
+  .enviar
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    gap: 45px 
+    margin-top: 80px
+    .titulo2
+      font-size: 1.45em
+      color: white
+      font-family: 'Montserrat', sans-serif
+      font-weight: 600
+    .form__group
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      gap: 30px
+      position: relative
+      padding: 20px 0 0
+      width: 100%
+      max-width: 180px
+      .form__field 
+        font-family: inherit
+        width: 100%
+        border: none
+        border-bottom: 2px solid white
+        outline: 0
+        font-size: 17px
+        color: #fff
+        padding: 7px 0
+        background: transparent
+        transition: border-color 0.2s
+      .form__field::placeholder
+        color: transparent
+      .form__field:placeholder-shown ~ .form__label
+        font-size: 17px
+        cursor: text
+        top: 20px
+      .form__label 
+        position: absolute
+        top: 0
+        display: block
+        transition: 0.2s
+        font-size: 17px
+        color: white
+        pointer-events: none
+      .form__field:focus
+        padding-bottom: 6px
+        font-weight: 700
+        border-width: 3px
+        border-image: linear-gradient(to right, #116399, #38caef)
+        border-image-slice: 1
+      .form__field:focus ~ .form__label 
+        position: absolute
+        top: 0
+        display: block
+        transition: 0.2s
+        font-size: 17px
+        color: #38caef
+        font-weight: 700
+      /* reset input */
+      .form__field:required, .form__field:invalid
+        box-shadow: none
+      
+    .form__group
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      gap: 30px
+      position: relative
+      padding: 20px 0 0
+      width: 100%
+      max-width: 180px
+      .form__field 
+        font-family: inherit
+        width: 100%
+        border: none
+        border-bottom: 2px solid white
+        outline: 0
+        font-size: 17px
+        color: #fff
+        padding: 7px 0
+        background: transparent
+        transition: border-color 0.2s
+      .form__field::placeholder
+        color: rgba(200, 200, 200, 0.615)
+      .form__field:placeholder-shown ~ .form__label
+        font-size: 17px
+        cursor: text
+        top: 20px
+      .form__label 
+        position: absolute
+        top: 0
+        display: block
+        transition: 0.2s
+        font-size: 17px
+        color: white
+        pointer-events: none
+      .form__field:focus
+        padding-bottom: 6px
+        font-weight: 700
+        border-width: 3px
+        border-image: linear-gradient(to right, #116399, #38caef)
+        border-image-slice: 1
+      .form__field:focus ~ .form__label 
+        position: absolute
+        top: 0
+        display: block
+        transition: 0.2s
+        font-size: 17px
+        color: #38caef
+        font-weight: 700
+      /* reset input */
+      .form__field:required, .form__field:invalid
+        box-shadow: none  
+
+      button
+        width: 100px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 12px
+        padding: 10px 0px
+        border: none
+        outline: none
+        background-color: white
+        padding: 10px 20px
+        font-size: 13.5px
+        font-weight: 700
+        color: #227597
+        border-radius: 5px
+        transition: all ease 0.1s
+        box-shadow: 0px 5px 0px 0px rgb(200, 200, 200)
+        cursor: pointer
+      button:active
+        transform: translateY(5px)
+        box-shadow: 0px 0px 0px 0px #a29bfe
+  .foto
+    display: none
+
+@media only screen and (min-width: 992px)
+  .enviame
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    justify-content: center
+    align-items: center
+    .foto
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-top: 80px
+      img
+        border-radius: 100%
+        width: 350px
+        height: 350px

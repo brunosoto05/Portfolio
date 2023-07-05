@@ -1,0 +1,35 @@
+nav
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 20px
+  position: sticky
+  top: 0
+  background-color: white
+  .logo
+    display: flex
+    img
+      width: 50px
+  .info
+    display: none
+  .menu_barra
+    display: flex
+    cursor: pointer
+    i
+      font-size: 28px
+
+@media only screen and (min-width: 768px)
+  nav
+    .info
+      display: flex
+      gap: 12px
+      a
+        text-decoration: none
+        color: #227597
+        font-family: Arial, Helvetica, sans-serif
+        font-size: 15px
+        font-weight: 600
+      a:hover
+        color: #164e64
+    .menu_barra
+      display: none
